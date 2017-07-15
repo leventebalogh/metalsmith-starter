@@ -1,8 +1,11 @@
 # MetalSmith Starter
 
+[Check out the demo page.](https://metalsmith.leventebalogh.com)
+
 ![Screenshot](./screenshot.png)
 
 ## Table of Contents
+- [Demo](https://metalsmith.leventebalogh.com)
 - [Dependencies](#dependencies)
 - [Setup](#setup)
 - [Development](#development)
@@ -28,7 +31,7 @@ $ yarn build
 # Build project
 $ yarn build
 
-# Serve built project
+# Serve built project (View on http://localhost:8080)
 $ yarn serve
 
 # Watch files for changes (and re-build on any change)
@@ -40,10 +43,13 @@ $ yarn run clean
 
 ## Directory Structure
 ```bash
-+- build/ # the static build output
++- ansible/ # ANSIBLE config files
++- build/ # The static build output
++- gulp/ # Gulp task files
 +- src/
-    +- content/ # all the static content written in Markdown
-    +- layouts/ # layout components in Handlebars templates
-    +- styles/ # styling in SASS files
-+- config.js # going to hold project specific configuration
+    +- content/ # All the static content written in Markdown
+    +- layouts/ # Layout components in Handlebars templates
+    +- styles/ # Styling in SASS files
++- config.js # Going to hold project specific configuration
++- deploy.sh # Executable script to easily deploy the project
 ```
