@@ -1,0 +1,25 @@
+{
+  "name": "Your Site Name",
+  "short_name": "Short Name",
+  "icons": [{
+        "src": "/assets/logos/logo-144x144.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "/assets/logos/logo-152x152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      }, {
+        "src": "/assets/logos/logo-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }, {
+        "src": "/assets/logos/logo-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}

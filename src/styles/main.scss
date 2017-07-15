@@ -1,0 +1,126 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_reset.scss";
+@import "./_buttons.scss";
+@import "./_nav.scss";
+@import "./_sections.scss";
+@import "./_footer.scss";
+
+html,
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    background-color: $gray-light;
+
+    @include phablet {
+        font-size: $font-size-phablet;
+    }
+
+    @include tablet {
+        font-size: $font-size-tablet;
+    }
+
+    @include desktop {
+        font-size: $font-size-desktop;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+h2 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.3rem;
+}
+h5 {
+    font-size: 1.2rem;
+}
+
+strong {
+    font-weight: 500 !important;
+}
+
+.color-white { color: $white !important; }
+.color-black { color: $black !important; }
+.color-red { color: $black !important; }
+.color-blue { color: $black !important; }
+.color-green { color: $black !important; }
+.color-gray { color: $gray !important; }
+.color-gray-light { color: $gray-light !important; }
+.color-gray-dark { color: $gray-dark !important; }
+
+.background-white { background-color: $white !important; }
+.background-black { background-color: $black !important; }
+.background-gray { background-color: $gray !important; }
+.background-gray-light { background-color: $gray-light !important; }
+
+.padding { padding: $gutter !important; }
+.padding-sm { padding: $gutter-sm !important; }
+.padding-lg { padding: $gutter-lg !important; }
+.padding-xl { padding: $gutter-xl !important; }
+
+.padding-left { padding-left: $gutter !important; }
+.padding-left-sm { padding-left: $gutter-sm !important; }
+.padding-left-lg { padding-left: $gutter-lg !important; }
+.padding-left-xl { padding-left: $gutter-xl !important; }
+
+.padding-right { padding-right: $gutter !important; }
+.padding-right-sm { padding-right: $gutter-sm !important; }
+.padding-right-lg { padding-right: $gutter-lg !important; }
+.padding-right-xl { padding-right: $gutter-xl !important; }
+
+.padding-top { padding-top: $gutter !important; }
+.padding-top-sm { padding-top: $gutter-sm !important; }
+.padding-top-lg { padding-top: $gutter-lg !important; }
+.padding-top-xl { padding-top: $gutter-xl !important; }
+
+.padding-bottom { padding-bottom: $gutter !important; }
+.padding-bottom-sm { padding-bottom: $gutter-sm !important; }
+.padding-bottom-lg { padding-bottom: $gutter-lg !important; }
+.padding-bottom-xl { padding-bottom: $gutter-xl !important; }
+
+.margin { margin: $gutter !important; }
+.margin-sm { margin: $gutter-sm !important; }
+.margin-lg { margin: $gutter-lg !important; }
+.margin-xl { margin: $gutter-xl !important; }
+
+.margin-left { margin-left: $gutter !important; }
+.margin-left-sm { margin-left: $gutter-sm !important; }
+.margin-left-lg { margin-left: $gutter-lg !important; }
+.margin-left-xl { margin-left: $gutter-xl !important; }
+
+.margin-right { margin-right: $gutter !important; }
+.margin-right-sm { margin-right: $gutter-sm !important; }
+.margin-right-lg { margin-right: $gutter-lg !important; }
+.margin-right-xl { margin-right: $gutter-xl !important; }
+
+.margin-top { margin-top: $gutter !important; }
+.margin-top-sm { margin-top: $gutter-sm !important; }
+.margin-top-lg { margin-top: $gutter-lg !important; }
+.margin-top-xl { margin-top: $gutter-xl !important; }
+
+.margin-bottom { margin-bottom: $gutter !important; }
+.margin-bottom-sm { margin-bottom: $gutter-sm !important; }
+.margin-bottom-lg { margin-bottom: $gutter-lg !important; }
+.margin-bottom-xl { margin-bottom: $gutter-xl !important; }
+
+.align-center { text-align: center !important; }
+.align-left { text-align: left !important; }
+.align-right { text-align: right !important; }
+
+.hidden { display: none !important; }
+.hidden-mobile { @include mobile { display: none !important; } }
+.hidden-phablet { @include phablet { display: none !important; } }
+.hidden-tablet { @include tablet { display: none !important; } }
+.hidden-desktop { @include desktop { display: none !important; } }

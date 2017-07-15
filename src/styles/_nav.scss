@@ -1,0 +1,120 @@
+.nav {
+    width: $nav-width;
+    height: $nav-height;
+    max-width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @include desktop {
+        height: $nav-height-desktop;
+        width: $nav-width-desktop;
+        max-width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: black;
+    }
+}
+
+.nav-list {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    height: 50px;
+    line-height: 50px;
+    transform: translate(0, -50%);
+
+    @include tablet {
+        right: 10px;
+    }
+
+    @include desktop {
+        left: 250px;
+    }
+}
+
+.nav-list-item {
+    float: right;
+    margin-right: 13px;
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    &:last-child {
+        margin-left: 0px;
+    }
+
+    @include desktop {
+        font-size: 1.3rem;
+        font-weight: 200;
+        margin-right: 35px;
+    }
+}
+
+.nav-list-item > a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: opacity .2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.nav-button {
+    background-color: $green;
+    padding: 5px 20px;
+    border-radius: 99px;
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    @include desktop {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0;
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+.logo {
+    position: absolute;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 55px;
+    height: 55px;
+    background-image: url(/assets/logos/logo-192x192.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -9999px;
+
+    @include tablet {
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    @include desktop {
+        width: 120px;
+        height: 120px;
+        left: 15px;
+        top: 15px;
+    }
+}

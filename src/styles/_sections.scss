@@ -1,0 +1,144 @@
+$background-blur: 2px;
+$background-brightness: 0.5;
+
+.section {
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 0;
+}
+
+.section h2 {
+    text-align: center;
+
+    @include tablet {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        font-weight: 200;
+    }
+
+    @include desktop {
+        font-size: 4rem;
+        line-height: 4rem;
+        font-weight: 200;
+    }
+}
+
+.section .button {
+    @include tablet {
+        font-size: 1.4rem;
+        padding: 15px 30px;
+        font-weight: 200;
+    }
+
+    @include desktop {
+        font-size: 1.4rem;
+        padding: 10px 30px;
+        font-weight: 200;
+    }
+}
+
+.section-image {
+    max-width: 100%;
+
+    @include tablet {
+        max-width: 400px;
+    }
+
+    @include desktop {
+        position: absolute;
+    }
+}
+
+.section-container {
+    width: $nav-width;
+    position: relative;
+    background-color: white;
+
+    @include desktop {
+        width: $nav-width-desktop;
+        margin: 0 auto;
+    }
+}
+
+.intro-paragraph {
+    padding-top: $gutter-xl;
+    width: 220px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+
+    @include phablet {
+        width: 270px;
+    }
+
+    @include tablet {
+        width: 350px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    @include desktop {
+        width: 400px;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+}
+
+.intro-section-1 {
+    .section-container {
+        margin-top: $nav-height;
+        padding-top: 10px;
+        padding-bottom: 30px;
+
+        @include tablet {
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+
+        @include desktop {
+            margin-top: $nav-height-desktop - 20px;
+            height: 500px;
+        }
+    }
+
+    .section-text-container {
+        @include desktop {
+            padding-top: 20px;
+        }
+    }
+
+    h2 {
+        margin: 0 auto;
+        width: 220px;
+
+        @include phablet {
+            width: 240px;
+        }
+
+        @include tablet {
+            width: 400px;
+        }
+
+        @include desktop {
+            width: 550px;
+        }
+    }
+
+    .icon {
+        font-size: 3rem;
+        padding-bottom: 10px;
+        display: inline-block;
+
+        @include tablet {
+            font-size: 3rem;
+        }
+
+        @include desktop {
+            font-size: 3rem;
+        }
+    }
+}

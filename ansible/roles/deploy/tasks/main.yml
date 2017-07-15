@@ -1,0 +1,4 @@
+- name: Copy build output
+  synchronize:
+    src: ../../../build
+    dest: ~/metalsmith

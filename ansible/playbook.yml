@@ -1,0 +1,3 @@
+- hosts: vps
+  roles:
+    - deploy

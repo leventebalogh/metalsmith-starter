@@ -1,0 +1,109 @@
+footer {
+    width: 100%;
+    overflow: hidden;
+    padding: $gutter-lg;
+    box-sizing: border-box;
+    position: relative;
+}
+
+footer a {
+    color: $white;
+    text-decoration: none;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.footer-content {
+    @include desktop {
+        width: $content-width-desktop;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
+.footer-logo {
+    background-image: url('/assets/logos/white-text-100.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 125px;
+    text-indent: -99999px;
+    margin: 0 auto;
+    display: block;
+
+    @include desktop {
+        float: left;
+        height: 50px;
+        width: 150px;
+        margin-top: 7px;
+        margin-right: 80px;
+    }
+}
+
+.footer-col {
+    margin-top: $gutter-xl;
+
+    @include desktop {
+        float: left;
+        width: 200px;
+        margin-top: 15px;
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+}
+
+.footer-col-title {
+    @include desktop {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-col-items {
+    margin-top: $gutter;
+    line-height: 1.4rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: $gutter-lg;
+    font-size: 0.8rem;
+    color: $white;
+
+    @include desktop {
+        font-size: 0.9rem;
+        float: left;
+        text-align: left;
+    }
+}
+
+.footer-separator {
+    clear: both;
+    height: 50px;
+}
+
+.footer-social {
+    text-align: center;
+
+    @include desktop {
+        font-size: 0.9rem;
+        float: right;
+    }
+}
+.footer-social .footer-col-items {
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+}
+.footer-social .footer-col-items li {
+    float: left;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.footer-social .footer-col-items li:first-child {
+    margin-left: 0px;
+}
+.footer-social a:active {
+    color: $blue;
+}
