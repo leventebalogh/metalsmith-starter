@@ -15,9 +15,11 @@
 To build and develop the project you will need the following dependencies:
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
-- [Yarn](https://yarnpkg.com/lang/en/)
+- [Yarn](https://yarnpkg.com/lang/en/) (Optional)
 
 ## Setup
+I am using `yarn` throughout the docs, although you can safely use `npm` instead.
+
 ```bash
 # Install dependencies
 $ yarn
