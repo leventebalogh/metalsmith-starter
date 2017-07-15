@@ -6,11 +6,20 @@
 
 ## Table of Contents
 - [Demo](https://metalsmith.leventebalogh.com)
+- [Features](#features)
 - [Dependencies](#dependencies)
 - [Setup](#setup)
 - [Development](#development)
 - [Deploy](#deploy)
 - [Directory Structure](#directory-structure)
+
+## Features
+- SASS Support (just include your files in `src/styles/main.scss`)
+- Watch file changes and rebuild (`$ yarn dev`)
+- Serve build directory (`$ yarn serve`)
+- Favicon example
+- Manifest.json example
+- Easy-to-use deploy script
 
 ## Dependencies
 To build and develop the project you will need the following dependencies:
@@ -47,10 +56,20 @@ $ yarn run clean
 ## Deploy
 Deploy is made easy with [ANSIBLE](https://www.ansible.com/).
 
-To copy the build files safely and efficiently to your target server, simply
-edit the files under the `ansible` folder.
+You need to install ANSIBLE first:
+```bash
+# OS X
+$ brew install ansible
 
-**ansible/hosts**
+# Ubuntu
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+```
+
+Customise the following files first:
+
+**"ansible/hosts"** <br />
 Change `leventebalogh.com` to your hostname, and also change the `ansible_user` to the
 user you use on your machine.
 Make sure you have the proper SSH keys loaded to login to the host.
@@ -59,10 +78,10 @@ Make sure you have the proper SSH keys loaded to login to the host.
 leventebalogh.com ansible_user=www
 ```
 
-**ansible/playbook**
+**"ansible/playbook"** <br />
 No need to touch this one.
 
-**ansible/roles/deploy/tasks/main.yml**
+**"ansible/roles/deploy/tasks/main.yml"** <br />
 Change `~/metalsmith` to the directory where you would like to host the `build` output from.
 ```yml
 - name: Copy build output
@@ -71,7 +90,7 @@ Change `~/metalsmith` to the directory where you would like to host the `build` 
     dest: ~/metalsmith
 ```
 
-If ready with the setup, simply run:
+**Run to Deploy:**
 ```bash
 $ ./deploy.sh
 ```
